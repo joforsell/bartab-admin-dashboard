@@ -29,9 +29,9 @@ jobs:
 
       - name: Install SwiftWasm SDK
         run: |
-          curl -L https://github.com/swiftwasm/swift/releases/download/swift-wasm-6.2.3-RELEASE/swift-wasm-6.2.3-RELEASE-wasm32-unknown-wasi.artifactbundle.zip -o swift-wasm.zip
+          curl -L https://github.com/swiftwasm/swift/releases/download/swift-wasm-6.3-SNAPSHOT-2026-02-20-a/swift-wasm-6.3-SNAPSHOT-2026-02-20-a-wasm32-unknown-wasi.artifactbundle.zip -o swift-wasm.zip
           unzip swift-wasm.zip
-          swift sdk install swift-wasm-6.2.3-RELEASE-wasm32-unknown-wasi.artifactbundle
+          swift sdk install swift-wasm-6.3-SNAPSHOT-2026-02-20-a-wasm32-unknown-wasi.artifactbundle
 
       - name: Build Swift WebAssembly
         run: swift build -c release --swift-sdk wasm32-unknown-wasi
