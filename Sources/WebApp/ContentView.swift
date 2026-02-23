@@ -1,7 +1,7 @@
 import ElementaryUI
 
 // The backend URL for admin API calls
-let backendURL = "http://127.0.0.1:8080"
+let backendURL = "http://api.bartab.info"
 
 @View
 struct ContentView {
